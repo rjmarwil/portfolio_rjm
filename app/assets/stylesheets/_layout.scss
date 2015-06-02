@@ -3,7 +3,13 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('geo-back-2.jpg') fixed cover;
+    background-image: url('geo-back-2.jpg');
+    background-size: cover;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
 }
 
 [class*='col-'] {
@@ -58,4 +64,10 @@ html, body {
 
 .f-right {
   float:right;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  margin: 10px 10px 10px 10px;
 }
