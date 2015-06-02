@@ -7,8 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="mobile">
+    <input type="checkbox" id="toggle-menu" />
+      <nav>
+        <div class="header">
+          <ul>
+            <li><%= link_to(image_tag("rjm.png"), root_path) %></li>
+          </ul>
+        </div>
+      </nav>
 
-<%= yield %>
+  <% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+
+  <%= yield %>
 
 </body>
 </html>
