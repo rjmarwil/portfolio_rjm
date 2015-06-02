@@ -9,23 +9,27 @@
 </head>
 <body>
   <div class="mobile">
-    <input type="checkbox" id="toggle-menu" />
-      <nav>
-        <div class="header">
-          <ul>
-            <li><%= link_to(image_tag("rjm.png"), root_path) %></li>
-          </ul>
-        </div>
-      </nav>
+    <nav>
+      <div class="header">
+        <ul>
+          <li><%= link_to(image_tag("rjm.png"), root_path, class:'brand') %></li>
+        </ul>
+      </div>
+    </nav>
 
-  <% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-  <% end %>
-  <% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-  <% end %>
+    <section>
 
-  <%= yield %>
+      <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+
+      <%= yield %>
+
+    </section>
+  </div>
 
 </body>
 </html>
