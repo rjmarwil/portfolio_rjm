@@ -8,12 +8,14 @@ html, body {
 }
 
 .container{
-  width: 100%;
+  width: 80%;
   height: 100%;
+  margin: 0 auto;
 }
 
 [class*='col-'] {
   float: left;
+  margin: 2% 2% 0 0;
   .grid &:last-of-type {
   }
 }
@@ -31,7 +33,7 @@ html, body {
 }
 
 .col-4-12 {
-  width: 33.3%;
+  width: 31.3%;
 }
 
 .col-5-12 {
@@ -68,6 +70,46 @@ html, body {
 
 .image {
   width: 100%;
-  height: 200px;
-  margin: 10px 10px 10px 10px;
+  height: 225px;
+  -webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+}
+
+.transition {
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2) translate(20%, 20%);
+}
+
+.hover-title {
+  width: 25%;
+  height: 225px;
+  background-color: #C6B491;
+  z-index: 50;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  text-align: center;
+  padding: 6%;
+  text-decoration: none;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.opacity-position {
+  opacity: 0.7;
+  top: 28%;
+  left: 28%;
 }
