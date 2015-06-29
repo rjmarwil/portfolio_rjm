@@ -16,25 +16,25 @@
 //= require_tree .
 
 $(document).ready(function(){
-  $('.col-4-12').hover(function() {
-    $(this).children().addClass('transition');
-    $(this).find(".image").addClass('blur');
-    $(this).find(".image").css({
-      "position": "absolute",
-      "width": "25%",
-      "top": "28%",
-      "left": "28%"
-    });
-    $(this).find(".hover-title").addClass('opacity-position');
-  }, function() {
-    $(this).children().removeClass('transition');
-    $(this).find(".image").removeClass('blur');
-    $(this).find(".hover-title").removeClass('opacity-position');
-    $(this).find(".image").css({
-      "position": "relative",
-      "width": "100%",
-      "top": "0%",
-      "left": "0%"
-    });
-  });
+  // $('.col-4-12').hover(function() {
+  //   $(this).children().addClass('transition');
+  //   $(this).find(".image").addClass('blur');
+  //   $(this).find(".image").css({
+  //     "position": "absolute",
+  //     "width": "25%",
+  //     "top": "28%",
+  //     "left": "28%"
+  //   });
+  //   $(this).find(".hover-title").addClass('opacity-position');
+  // }, function() {
+  //   $(this).children().removeClass('transition');
+  //   $(this).find(".image").removeClass('blur');
+  //   $(this).find(".hover-title").removeClass('opacity-position');
+  //   $(this).find(".image").css({
+  //     "position": "relative",
+  //     "width": "100%",
+  //     "top": "0%",
+  //     "left": "0%"
+  //   });
+  // });
 });
